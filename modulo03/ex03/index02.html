@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        thead, tfoot {
+            background-color: rgba(12, 57, 96, 0.228);
+            font-weight: bold;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            border: solid black 5px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightblue;
+            border-radius: 5px 5px 0px 0px ;
+        }
+
+        td.name {
+            text-align: center;
+        }
+
+        td.num {
+            color: blue;
+            text-shadow: 2px 2px 15px 0px black;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(128, 128, 128, 0.456);
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Minha segunda tabela</h1>
+    <br>
+    <table>
+        <caption>
+            População dos estados brasileiros
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 60px;">Pupulação</th>
+                <td style="width: 50px;">Porcentagem</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name">São Paulo</td>
+                <td class="num">45 919 049</td>
+                <td class="num">21,88%</td>
+            </tr>
+            <tr>
+                <td class="name">Minas Gerais</td>
+                <td class="num">20 538 718</td>
+                <td class="num">10,11%</td>
+            </tr>
+            <tr>
+                <td class="name"> Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+                <td class="num">7,91%</td>
+            </tr>
+            <tr>
+                <td class="name">Bahia</td>
+                <td class="num">14 141 626</td>
+                <td class="num">6,96%</td>
+            </tr>
+            <tr>
+                <td class="name">Paraná</td>
+                <td class="num">11 444 380</td>
+                <td class="num">5,64%	</td>
+            </tr>
+            <tr>
+                <td class="name">Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+                <td class="num">5,36%	</td>
+            </tr>
+            <tr>
+                <td class="name">Pernambuco</td>
+                <td class="num">9 058 931</td>
+                <td class="num">4,46%	</td>
+            </tr>
+            <tr>
+                <td class="name">Ceará</td>
+                <td class="num">8 794 957	</td>
+                <td class="num">4,33%	</td>
+            </tr>
+            <tr>
+                <td class="name">Pará</td>
+                <td class="num">8 121 025	</td>
+                <td class="num">4,1%	</td>
+            </tr>
+        </tbody>
+        <tfoot>
+                <th scope="row">Total de habitantes</th>
+                <td>00000</td>
+                <td><strong>00000</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>
