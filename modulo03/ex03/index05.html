@@ -26,15 +26,27 @@
         th {
             border: 2px solid black;
         }
+
+        col.cnome {
+            background-color: aqua;
+        }
+
+        col.cfilmes {
+            background-color: bisque;
+        }
     </style>
 </head>
 <body>
     <h1>Exercícios de tabela</h1>
     <br>
     <table>
-        <caption>
+        <caption>Colgroup de tabelas</caption>
 
-        </caption>
+        <colgroup>
+            <col class="cgrupo">
+            <col class="cnome">
+            <col class="cfilmes" span="3">
+        </colgroup>
         <thead>
             <tr>
                 <th scope="col">Grupo</th>
